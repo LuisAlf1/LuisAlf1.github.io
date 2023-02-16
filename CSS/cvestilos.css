@@ -1,0 +1,22 @@
+.barra {
+    display: inline-block;
+    background-color:#1d5786; 
+    color: #fff;
+    padding: 10px 30px; text-decoration: none;}
+.barra:hover{ 
+    background-color:#8fc5f1; 
+} 
+nav{
+    background-color: orange;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 550px) {
+    nav { 
+    background-color: crimson;
+    flex-direction:column;}
+    .barra {
+        margin: 10px 0;
+    }
+}
