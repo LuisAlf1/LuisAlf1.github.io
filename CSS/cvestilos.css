@@ -12,11 +12,14 @@ nav{
     display: flex;
     justify-content: space-around;
 }
+.data{
+    flex-direction:column;
+    justify-items:auto;}
+
 @media (max-width: 550px) {
     nav { 
     background-color: crimson;
-    flex-direction:column;}
+    flex-direction:column };
     .barra {
-        margin: 10px 0;
-    }
+        margin: 10px 0;}
 }
