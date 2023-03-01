@@ -9,70 +9,96 @@
     <link rel="stylesheet" href="css/cvestilos.css">
     <script src="https://kit.fontawesome.com/148dfb528f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap"
+     rel="stylesheet">
 </head>
 <body>
-   <h1>Curriculum Vitae</h1> 
-   <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="foto de perfil"
-   height="200px" width="200px">
+   <h1>CURRICULUM VITAE</h1> 
+  <div><img src="https://randomuser.me/api/portraits/men/75.jpg" alt="foto de perfil"
+   height="250px" width="250px">
+  </div>
    <h2> Michael Rodriguez </h2>
 
    <nav>
-    <button id="menu" type="button" class="barra"> <i class="fa-solid fa-rotate-left"></i> MENU</button>
-    <a id="Info" href="#ht"  class ="barra">
+        <button id="menu" type="button" class="barra"> <i class="fa-solid fa-rotate-left"></i> MENU</button>
+        <a id="Info" href="#ht"  class ="barra">
         <i class="fa-solid fa-user"></i> INFORMACIÓN PERSONAL
-    </a>
-    <a id="Expe" href="#Ex" class ="barra"> 
+         </a>
+         <a id="Expe" href="#Ex" class ="barra"> 
         <i class="fa-solid fa-briefcase"></i> EXPERIENCIA
-    </a>
-    <a id="Habi" href="#habil" class ="barra" >
+         </a>
+        <a id="Habi" href="#habil" class ="barra" >
         <i class="fa-solid fa-lightbulb"></i> HABILIDADES  
-    </a>
-    <a id="Contac" href="#Con" class ="barra" >
+        </a>
+        <a id="Contac" href="#Con" class ="barra" >
         <i class="fa-solid fa-phone"></i> CONTACTO
-    </a>
-
+        </a>
    </nav>
    
    <ul id= "ht" class="item">
-    <li>Fecha de Nacimiento: 3/4/1992</li>
-    <li>Edad: 30</li>
-    <li>Dirección: Gaspar Núñez de Arce N°447</li>
-    <li>Localidad: Lomas de Zamora - Buenos Aires</li>
-    <li>Nacionalidad: Argentina</li>
-    <li>DNI: 36.156.536</li>
-    <li>Estado Civil: Soltero</li>
+      <li>Fecha de Nacimiento: 3/1/1992</li>
+      <li>Edad: 31</li>
+      <li>Dirección: Gaspar Núñez de Arce N°447</li>
+      <li>Localidad: Lomas de Zamora - Buenos Aires</li>
+      <li>Nacionalidad: Argentina</li>
+      <li>DNI: 36.156.536</li>
+      <li>Estado Civil: Soltero</li>
     </ul>
-    <button id="cierre" type="button" class="boton">
-     Cerrar <i class="fa-solid fa-user"></i> 
-    </button>
-
+    
     <ul id="Ex" class="item">
-        <li>Atención al cliente en un local de ropa</li>
-        <li>Cajero en un almacén </li>
+       <li>Atención al cliente en un local de ropa</li>
+       <li> <img src="CSS/tienda-de-ropa-fuente=www.instalacionesanfra.com.jpg" alt= "local de ropa"
+           class="imagenes">
+        </li>
+       <li>Cajero en un almacén </li>
+       <li> <img src="CSS/cajero- fuente=estudiosanamar.com.jpg" alt="almacén"
+           class="imagenes">
+        </li>
         <li>Atención al cliente en un call center</li>
+        <li> <img src="CSS/CallCenter - fuente= www.cadlan.com.jpg" alt="call center"
+           class="imagenes">
+        </li>
     </ul>
-    <button id="IIcierre" type="button" class="boton">
-        Cerrar <i class="fa-solid fa-briefcase"></i> 
-       </button>
-
+    
     <ul id="habil" class="item" >
-        <li> Dominio de Microsoft Office (Word, Excel, Power Point)</li>
+        <li> Manejo de herramientas de Microsoft Office </li>
         <li> Rebatir argumentativamente</li>
         <li> Compresión/producción oral y escrita del idioma inglés </li>
     </ul>
-    <button id="IIIcierre" type="button" class="boton">
-        Cerrar <i class="fa-solid fa-lightbulb"></i> 
-       </button>
+  
+    <form action= "action_page.php" method="post" id="formulario">
+        <ul>
+            <li>
+                <label for="nombre y apellido"> Nombre y Apellido: 
+                     <abbr title="Necesario" aria-label="Necesario">*</abbr>
+                </label>
+                <input type="text" name="nombre y apellido" placeholder="Ingrese su nombre y apellido" required/>
+            </li>
+            <li>
+                 <label for="número de teléfono"> Teléfono: </label>
+                 <input type="number" name="número de teléfono" placeholder="Ingrese su número" ri/>
+            </li>
+            <li>
+                <label for="E-Mail"> E-mail:
+                    <abbr title="Necesario" aria-label="Necesario">*</abbr>
+                </label>
+                <input type="email" name="e-mail" placeholder="Ingrese su e-mail" required>
+            </li>
+            <li>
+                <label for="mensaje"> Mensaje: </label>
+                <textarea name="mensaje" id="msg" cols="30" rows="10"></textarea>
+            </li>
+            <li class="boton">
+                <button type="submit" id="boton"> ENVIAR</button>
+            </li>
+        </ul>
+    </form>
 
-       <ul id="Con" class="item">
+   <ul id="Con" class="item">
         <li>Celular: 1124943102 (llamadas, WhatsApp)</li>
         <li>E-Mail: michael.rodriguez@gmail.com</li>
-       </ul>
-    <button id="IVcierre" type="button" class="boton">
-        Cerrar <i class="fa-solid fa-phone"></i> 
-    </button>
+    </ul>
 
  <script src="JS/comportamiento.js"></script>
 

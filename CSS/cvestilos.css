@@ -4,6 +4,25 @@ body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight:bolder
+ }
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight:bolder;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+div img {
+    border: solid
+}
 .barra {
     display: inline-block;
     background-color:#1d5786; 
@@ -25,18 +44,77 @@ nav {
     display: none;
     padding: 40px;
     padding-block-end: 10px;
-    font-size: 24px;
+    font-size: 30px;
+    margin: 0 auto;
+    width: 400px;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5em;
 }
-.boton {
+.imagenes{
+  height: 300px;
+  width: 400px;
+}
+form {
+    margin: auto;
+    width: 400px;
+    padding: 40px;
     display: none;
-    background-color: cadetblue;
-    padding: 5px;
-}
+    padding-block-end: 10px;
+    font-size: 25px;
+   }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    font: 1em 'Yanone Kaffeesatz', sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #f82323;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+  
+  .boton {
+    padding-left: 100px;
+    font-size: 25;
+    border-bottom-color: #8fc5f1;
+   }
+  #boton {
+    background-color:#d18c3d;
+    padding: 10px;
+  }
+  #boton:hover{
+    background-color:#ce9b61
+  }
   
 @media (max-width: 700px) {
     nav { 
-    background-color: crimson;
-    flex-direction:column };
-    .barra {
+        background-color: crimson;
+        flex-direction:column };
+     .barra {
         margin: 10px 0;}
 }
